@@ -33,7 +33,7 @@ public class addStudentServlet extends HttpServlet {
         bw.close();
 
         //定时刷新响应给浏览器
-        resp.setContentType("text/html;charset=UTF-8");
+        //resp.setContentType("text/html;charset=UTF-8");
         resp.getWriter().write("添加成功，2秒后自动跳转到首页");
         resp.setHeader("Refresh", "2;URL=/stu/index.jsp");
     }
